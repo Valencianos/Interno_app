@@ -26,10 +26,6 @@ const projectStore = useProjectStore()
 
 <style scoped lang="scss">
 @import '@/assets/styles/_vars.scss';
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .about {
   &__box {

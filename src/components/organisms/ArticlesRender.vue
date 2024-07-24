@@ -32,6 +32,8 @@ const articleStore = useArticleStore()
     flex-direction: column;
     gap: 12px;
     text-align: center;
+    margin-left: calc(50% - 380px);
+    margin-right: calc(50% - 380px);
   }
   &__title {
     font-family: $font-secondary;
