@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import LogoLink from '@/components/atoms/LogoLink.vue'
 import LinkBlock from '@/components/molecules/LinkBlock.vue'
 </script>
