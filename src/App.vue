@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-// import PaginationBlock from '@/components/molecules/PaginationBlock.vue'
 import HeaderComponent from '@/components/templates/HeaderComponent.vue'
+import FooterComponent from '@/components/templates/FooterComponent.vue'
 
 // const pages = [1, 2, 3]
 </script>
 
 <template>
   <HeaderComponent />
-<!--  <PaginationBlock-->
-<!--    :pages="pages"-->
-<!--  />-->
   <RouterView />
+  <FooterComponent />
 </template>
 
 <style>

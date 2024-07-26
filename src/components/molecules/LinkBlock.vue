@@ -1,7 +1,7 @@
 <script setup lang="ts">
   const linkList = [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Pages", link: "/about_us" },
+    { id: 2, name: "About Us", link: "/about_us" },
     { id: 3, name: "Services", link: "/services" },
     { id: 4, name: "Project", link: "/project" },
     { id: 5, name: "Blog", link: "/blog" },
