@@ -13,5 +13,6 @@ const banner = {
 </template>
 
 <style scoped lang="scss">
+@import '@/assets/styles/_vars.scss';
 
 </style>

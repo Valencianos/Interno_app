@@ -10,7 +10,7 @@ const projectStore = useProjectStore()
     <div class="container">
       <div class="about__box">
         <h2 class="about__title">Follow Our Projects</h2>
-        <p class="about__text">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
+        <p class="about__text">It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts  points.</p>
       </div>
       <div class="about__content">
         <ProjectBlock

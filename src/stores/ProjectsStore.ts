@@ -215,7 +215,10 @@ export const useProjectStore = defineStore('projectStore', () => {
     }
   ]
 
+  const tags = ["Bathroom", "Bed Room", "Kitchan", "Living Area"];
+
   return {
-    projects
+    projects,
+    tags
   }
 })

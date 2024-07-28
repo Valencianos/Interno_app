@@ -3,6 +3,7 @@ import PagesBannerBlock from '@/components/molecules/PagesBannerBlock.vue';
 import { useProjectStore } from '@/stores/ProjectsStore';
 import ProjectBlock from "@/components/molecules/ProjectBlock.vue";
 import ProjectFilterBlock from '@/components/molecules/ProjectFilterBlock.vue';
+import PaginationBlock from '@/components/molecules/PaginationBlock.vue'
 const projectStore = useProjectStore()
 
 const pages = [1,2,3]
@@ -32,10 +33,10 @@ const banner = {
 </template>
 
 <style scoped lang="scss">
+@import '@/assets/styles/_vars.scss';
 .about__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: dense;
   grid-column-gap: 30px;
   grid-row-gap: 35px;
 }
