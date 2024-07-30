@@ -19,13 +19,13 @@ const banner = {
     :banner="banner"
   ></PagesBannerBlock>
   <div class="container">
-    <ProjectFilterBlock />
+<!--    <ProjectFilterBlock />-->
     <button @click="filteredItems(buttonTag)" v-for="buttonTag in buttonsTag" :key="buttonTag">{{ buttonTag }}</button>
     <div class="about__content">
-      <ProjectBlock
-        v-for="project in projectStore.projects.slice(4,12)"
-        :key="project.id"
-        :project="project"/>
+<!--      <ProjectBlock-->
+<!--        v-for="project in projectStore.projects.slice(4,12)"-->
+<!--        :key="project.id"-->
+<!--        :project="project"/>-->
     </div>
   </div>
 
