@@ -1,39 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useProjectStore } from '@/stores/ProjectsStore'
-const projectStore = useProjectStore()
 
-defineProps({
-
-})
-let chosenTag: String = '';
-let selectedTag: String = 'Bathroom';
-let currentTag: String = '';
-const filterByTag = (tag: String) => {
-  if (currentTag) {
-    currentTag.target.classList.remove('project-content__tag--active')
-    event.target.classList.add('project-content__tag--active')
-    currentTag = event
-  } else {
-    event.target.classList.add('project-content__tag--active')
-    .currentTagButton = event
-  }
-  selectedTag = tag;
-}
-
-// const filteredItems = computed(() => projectStore.projects.tags.filter(item => item.tags.includes(this.chosenTag)));
-// console.log(filteredItems)
 </script>
 
 <template>
-  <div class="category__list center">
-    <button class="category__item"
-            v-for="tag in projectStore.tags"
-            :key="tag"
-            @click="filterByTag(tag)"
-            :class="{active:tag===chosenTag}"
-    >{{ tag }}</button>
-  </div>
+  <div></div>
 </template>
 
 <style scoped lang="scss">
