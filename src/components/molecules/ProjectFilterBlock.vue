@@ -1,9 +1,40 @@
 <script setup lang="ts">
 
+<<<<<<< HEAD
 </script>
 
 <template>
   <div></div>
+=======
+defineProps({
+  tags: {
+    type: Array,
+    required: true
+  }
+})
+let chosenTag: String = 'Bathroom';
+let currentTag: String = '';
+
+const filterByTag = (tag: String) => {
+
+}
+
+const filteredItems = computed(() => {
+  return projectStore.tags.filter(item => item.tags === chosenTag)
+});
+
+</script>
+
+<template>
+  <div class="category__list center">
+    <button class="category__item"
+            v-for="tag in tags"
+            :key="tag"
+            @click="filterByTag(tag)"
+            :class="{active:tag===chosenTag}"
+    >{{ tag }}</button>
+  </div>
+>>>>>>> refs/remotes/origin/main
 </template>
 
 <style scoped lang="scss">

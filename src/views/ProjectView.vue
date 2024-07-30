@@ -40,7 +40,7 @@ const filteredProjects = (chosenTag: string) => {
     </div>
     <div class="about__content">
       <ProjectBlock
-        v-for="project in filteredProjects(chosenTag)"
+        v-for="project in projectStore.projects.slice(4,12)"
         :key="project.id"
         :project="project"/>
     </div>
