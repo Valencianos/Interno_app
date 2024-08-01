@@ -14,7 +14,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       quote: `The details are not the details. 
         They make the design.`,
       date: '26 December,2022',
-      tags: ['Living Area', 'Kitchan'],
+      tags: 'Living Area',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -32,7 +32,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       category: 'Decor / Artchitecture',
 
       date: '26 December,2022',
-      tags: ['Bed Room', 'Kitchan'],
+      tags: 'Bed Room',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -49,7 +49,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: 'Modern Kitchan',
       category: 'Decor / Artchitecture',
       date: '26 December,2022',
-      tags: ['Bathroom', 'Kitchan'],
+      tags: 'Bathroom',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -66,7 +66,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: 'Modern Kitchan',
       category: 'Decor / Artchitecture',
       date: '26 December,2022',
-      tags: ['Bed Room', 'Kitchan'],
+      tags: 'Kitchan',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -83,7 +83,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Minimal Bedroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Kitchan'],
+      tags: 'Bed Room',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -100,7 +100,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Minimal Bedroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Living Area'],
+      tags: 'Bed Room',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -117,7 +117,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Classic Minimal Bedroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Kitchan'],
+      tags: 'Bed Room',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -134,7 +134,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Modern Bedroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Living Area'],
+      tags: 'Living Area',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -151,7 +151,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Minimal Bedroom table",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Bathroom'],
+      tags: 'Bed Room',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -168,7 +168,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "System Table",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Bathroom'],
+      tags: 'Bathroom',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -185,7 +185,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Modern Medroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Kitchan'],
+      tags: 'Kitchan',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
@@ -202,7 +202,7 @@ export const useProjectStore = defineStore('projectStore', () => {
       name: "Modern Bedroom",
       category: "Decor / Artchitecture",
       date: '26 December,2022',
-      tags: ['Bed Room', 'Living Area'],
+      tags: 'Living Area',
       article: {
         title: 'Design sprints are great',
         content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',

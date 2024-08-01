@@ -1,9 +1,9 @@
-<script setup lang="ts">
+<script setup>
 import PagesBannerBlock from "@/components/molecules/PagesBannerBlock.vue";
 import { useProjectStore } from '@/stores/ProjectsStore';
 import ProjectBlock from "@/components/molecules/ProjectBlock.vue";
 import PaginationBlock from '@/components/molecules/PaginationBlock.vue'
-import { computed } from "vue";
+import { ref, computed } from "vue";
 const projectStore = useProjectStore()
 
 const pages = [1,2,3]
@@ -13,16 +13,16 @@ const banner = {
   subtitle: "Home / Project"
 }
 
-let chosenTag: string = 'Kitchan';
+const chosenTag = ref('');
 
-const filterByTag = (tag: string) => {
-  chosenTag = tag;
-  console.log(chosenTag);
+function filterByTag(tag) {
+  chosenTag.value = tag;
 }
 
-const filteredProjects = (chosenTag: string) => {
-  return projectStore.projects.filter(project => project.tags.includes(chosenTag))
-}
+const filteredProjects = computed(() => {
+    return projectStore.projects.filter(project => project.tags === chosenTag.value)
+})
+
 </script>
 
 <template>
@@ -40,7 +40,7 @@ const filteredProjects = (chosenTag: string) => {
     </div>
     <div class="about__content">
       <ProjectBlock
-        v-for="project in projectStore.projects.slice(4,12)"
+        v-for="project in filteredProjects"
         :key="project.id"
         :project="project"/>
     </div>
