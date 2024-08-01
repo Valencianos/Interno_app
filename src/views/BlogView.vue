@@ -1,17 +1,20 @@
 <script setup lang="ts">
-
 import PagesBannerBlock from '@/components/molecules/PagesBannerBlock.vue'
-const banner = {
-  img: "/images/banners/articles_news.png",
-  title: "Articles & News",
-  subtitle: "Home / Blog"
-}
+import LatestPostBlock from '@/components/molecules/LatestPostBlock.vue'
+import { useProjectStore } from '@/stores/ProjectsStore';
+const projectStore = useProjectStore();
+import { useArticleStore} from '@/stores/ArticlesStore'
+const articleStore = useArticleStore();
+
 </script>
 
 <template>
   <PagesBannerBlock
-    :banner="banner"
+    :banner="projectStore.banners[1]"
   ></PagesBannerBlock>
+  <LatestPostBlock
+    :post="articleStore.post"
+  ></LatestPostBlock>
 </template>
 
 <style scoped lang="scss">

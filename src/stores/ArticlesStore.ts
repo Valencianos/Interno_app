@@ -45,7 +45,16 @@ export const useArticleStore = defineStore('articleStore', () => {
       img: 'interior-design_2.png'
     }
   ]
+
+  const post = {
+    title: 'Low Cost Latest Invented Interior Designing Ideas',
+      img: '/images/articles/interior-design.png',
+      date: '26 December,2022',
+      text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. Lorem Ipsum is not simply random text. It has roots in a piece of classica.'
+  }
+
   return {
-    articles
+    articles,
+    post
   }
 })

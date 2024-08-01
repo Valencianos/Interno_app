@@ -217,8 +217,50 @@ export const useProjectStore = defineStore('projectStore', () => {
 
   const tags = ["Bathroom", "Bed Room", "Kitchan", "Living Area"];
 
+  const banners = [
+    {
+      id: 'about_us',
+      img: "/images/banners/about_us.png",
+      title: "About Us",
+      subtitle: "Home / About Us"
+    },
+    {
+      id: 'blog',
+      img: "/images/banners/articles_news.png",
+      title: "Articles & News",
+      subtitle: "Home / Blog"
+    },
+    {
+      id: 'blog_details',
+      img: "/images/banners/blog_details.png",
+    },
+    {
+      id: 'contacts',
+      img: "/images/banners/contact.png",
+      title: "Contact Us",
+      subtitle: "Home / Contact"
+    },
+    {
+      id: 'project',
+      img: "/images/banners/projects.png",
+      title: "Our Project",
+      subtitle: "Home / Project"
+    },
+    {
+      id: 'project_details',
+      img: "/images/banners/project_details.png",
+    },
+    {
+      id: 'services',
+      img: "/images/banners/services.png",
+      title: "Services",
+      subtitle: "Home / Services"
+    }
+  ]
+
   return {
     projects,
-    tags
+    tags,
+    banners,
   }
 })

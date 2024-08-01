@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import PaginationButton from '@/components/atoms/PaginationButton.vue'
+import { defineProps } from 'vue';
 
-defineProps({
+const props = defineProps({
   pages: Array,
 })
-
 </script>
 
 <template>
   <div class="pagination-box">
     <PaginationButton
-      v-for="(page, index) in pages"
-      :key="index.id"
+      v-for="(page, index) in props.pages"
+      :key="index"
       :pageNumber="page"
     />
     <div class="pagination-last">
@@ -25,8 +25,9 @@ defineProps({
 
 <style scoped>
   .pagination-box {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 200px;
   }
 </style>

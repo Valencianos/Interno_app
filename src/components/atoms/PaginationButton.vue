@@ -1,16 +1,15 @@
 <script setup lang="ts">
-  defineProps({
-    pageNumber: {
-      type: Number,
-      required: true
-      }
+import { defineProps } from 'vue';
+
+const props = defineProps({
+    pageNumber: Number
   })
 </script>
 
 <template>
   <button class="page-button" type="button">
-    <span class="page-number" v-if="pageNumber < 10">0{{ pageNumber }}</span>
-    <span class="page-number" v-else>{{ pageNumber }}</span>
+    <span class="page-number" v-if="props.pageNumber < 10">0{{ props.pageNumber }}</span>
+    <span class="page-number" v-else>{{ props.pageNumber }}</span>
   </button>
 </template>
 
@@ -27,11 +26,11 @@
   }
   .page-number {
     color: $text-primary;
-    font-family: "Jost", sans-serif;
+    font-family: $font-primary;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     text-transform: capitalize;
   }
 </style>

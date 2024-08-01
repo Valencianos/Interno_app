@@ -3,7 +3,6 @@ import { RouterView } from 'vue-router'
 import HeaderComponent from '@/components/templates/HeaderComponent.vue'
 import FooterComponent from '@/components/templates/FooterComponent.vue'
 
-// const pages = [1, 2, 3]
 </script>
 
 <template>

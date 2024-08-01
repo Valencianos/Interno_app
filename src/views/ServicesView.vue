@@ -1,16 +1,13 @@
 <script setup lang="ts">
-
 import PagesBannerBlock from '@/components/molecules/PagesBannerBlock.vue'
-const banner = {
-  img: "/images/banners/services.png",
-  title: "Services",
-  subtitle: "Home / Services"
-}
+import { useProjectStore } from '@/stores/ProjectsStore';
+const projectStore = useProjectStore();
+
 </script>
 
 <template>
   <PagesBannerBlock
-    :banner="banner"
+    :banner="projectStore.banners[6]"
   ></PagesBannerBlock>
 </template>
 

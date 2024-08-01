@@ -1,20 +1,29 @@
 <script setup lang="ts">
-defineProps({
+import { defineProps, type PropType } from 'vue'
+
+
+export interface Article {
+  img: String,
+  title: String,
+  category: String,
+  date: String
+}
+
+const props = defineProps({
   article: {
-    type: Object,
+    type: Object as PropType<Article>,
     required: true,
   }
 })
 </script>
-
 <template>
   <article class="articles__item item">
-    <img :src="`/images/articles/${article.img}`" :alt="article.category" class="item__img">
-    <p class="item__design">{{ article.category }}</p>
+    <img :src="`/images/articles/${props.article.img}`" :alt="props.article.category" class="item__img">
+    <p class="item__design">{{ props.article.category }}</p>
     <div class="item__text">
-      <h3 class="item__text_title">{{ article.title }}</h3>
+      <h3 class="item__text_title">{{ props.article.title }}</h3>
       <div class="item__text_subtitle">
-        <p class="item__text_date">{{ article.date }}</p>
+        <p class="item__text_date">{{ props.article.date }}</p>
         <button href="#" class="item__text_link articles__item_button">
           <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.77142 14.9527L7.71428 8.267L1.77142 1.58128" stroke="#292F36" stroke-width="2"

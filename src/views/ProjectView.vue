@@ -7,11 +7,6 @@ import { ref, computed } from "vue";
 const projectStore = useProjectStore()
 
 const pages = [1,2,3]
-const banner = {
-  img: "/images/banners/projects.png",
-  title: "Our Project",
-  subtitle: "Home / Project"
-}
 
 const chosenTag = ref('');
 
@@ -27,7 +22,7 @@ const filteredProjects = computed(() => {
 
 <template>
   <PagesBannerBlock
-    :banner="banner"
+    :banner="projectStore.banners[4]"
   ></PagesBannerBlock>
   <div class="container">
     <div class="category__list center">
@@ -44,9 +39,8 @@ const filteredProjects = computed(() => {
         :key="project.id"
         :project="project"/>
     </div>
+    <PaginationBlock :pages="pages" />
   </div>
-
-  <PaginationBlock :pages="pages" />
 </template>
 
 <style scoped lang="scss">
@@ -56,23 +50,25 @@ const filteredProjects = computed(() => {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 35px;
+  margin-bottom: 60px;
 }
 
 .center {
   margin: auto;
 }
+
 .category__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  border: 1px solid #cda274;
+  border: 1px solid $fill-primary;
   border-radius: 18px;
   max-width: max-content;
   margin-bottom: 60px;
 }
 .category__item {
-  font-family: "Jost", sans-serif;
+  font-family: $font-primary;
   padding: 26px 66px;
   background-color: #fff;
   font-weight: 600;
@@ -80,19 +76,14 @@ const filteredProjects = computed(() => {
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #292f36;
+  color: $text-primary;
   border: none;
   border-radius: 18px;
   outline: none;
   cursor: pointer;
-  &:hover {
-    color: #fff;
-    background: #cda274;
-    opacity: 0.2;
-  }
 }
 .active {
   color: #fff;
-  background: #cda274;
+  background: $fill-primary;
 }
 </style>
