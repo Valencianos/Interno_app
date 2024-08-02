@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import PagesBannerBlock from "@/components/molecules/PagesBannerBlock.vue";
 import { useProjectStore } from '@/stores/ProjectsStore';
 import ProjectBlock from "@/components/molecules/ProjectBlock.vue";
@@ -10,7 +10,7 @@ const pages = [1,2,3]
 
 const chosenTag = ref('');
 
-function filterByTag(tag) {
+function filterByTag(tag: string) {
   chosenTag.value = tag;
 }
 

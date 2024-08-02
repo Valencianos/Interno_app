@@ -15,15 +15,13 @@ export const useProjectStore = defineStore('projectStore', () => {
         They make the design.`,
       date: '26 December,2022',
       tags: 'Living Area',
-      article: {
-        title: 'Design sprints are great',
-        content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
-        bullet: [
-          'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
-          'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
-          'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
-        ]
-      }
+      article: 'Design sprints are great',
+      content: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered',
+      bullet: [
+        'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+        'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+        'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+      ]
     },
     {
       id: 2,

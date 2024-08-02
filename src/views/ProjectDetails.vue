@@ -9,6 +9,7 @@ const projectStore = useProjectStore();
   <PagesBannerBlock
     :banner="projectStore.banners[5]"
   ></PagesBannerBlock>
+
 </template>
 
 <style scoped lang="scss">
